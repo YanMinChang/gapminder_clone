@@ -1,0 +1,8 @@
+name: gapminder_clone
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas=2.2  #沒下載conda可在中東機用pip list | grep pandas查詢
+  - matplotlib=3.8  #pip list | grep matplotlib
+  - plotly=5.24  #pip list | grep plotly
