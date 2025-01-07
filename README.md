@@ -1,72 +1,17 @@
-## 標題大小有6種
+# 練習專案一：兩百個國家、兩百年、四分鐘
 
-# 1.練習
-## 2.練習
-### 3.練習
-#### 4.練習
-##### 5.練習
-###### 6.練習
+## 簡介
+這個專案「兩百個國家、兩百年、四分鐘」復刻了名聞遐邇的 [Hans Rosling's 200 Countries, 200 Years, 4 Minutes](https://youtu.be/jbkSRLYSojo?si=5WkjOoiU_IPuKGsR) 資料視覺化，我們使用了 `pandas` 與 `sqlite3` 建立了資料庫，利用 `matplotlib` 進行概念驗證，最後以 `plotly.express` 做出成品。
 
-## 粗體和斜體
+## 如何重現
 
-**粗體**
+- 安裝 [Miniconda](https://docs.anaconda.com/miniconda/)
+- 依據 `environment.yml` 建立環境
 
-*斜體*
-
-## 程式或指令
-獨立的程式碼
-
-`print("Hello")`
-
-獨立的程式區塊
-
-```python 
-import this
-```
-
-想要檢查python賈查是否妥當 可用以下終端機命名:
 ```bash
-python --version
-conda --version
+conda env create -f environment.yml
 ```
 
-## 有序清單
-
-1. 第一項
-2. 第二項
-3. 第三項 （以此類推）
-
-## 無序清單
-
-- 第一項
-- 第二項
-    - 小項目1
-    - 小項目2
-- 第三項
-    - 小項目1
-    - 小項目2
-
-## 加入超連結
-
-<https://shop.muji.tw/?lang=zh-TW>
-
-[無印良品](https://shop.muji.tw/?lang=zh-TW)
-
-## 標註圖片路徑
-
-### 只需要相對路徑
-
-![](cff60e2e-6c9c-460b-9535-6ccdc8931691-1682562436-xdtdnknvsf_d.jpg)
-
-### 圖片沒有成功顯示時會讀取中括號中的文字
-
-![無此圖片](/Users/min/Desktop/專案練習/cff60e2e-6c9c-460b-9535-6ccdc8931691-1682562436-xdtdnknvsf_d.jpg)
-
-
-
-
-
-
-
-
-
+- 將 `data/` 資料夾中的四個 CSV 檔案置放於工作目錄中的 `data/` 資料夾。
+- 啟動環境並執行 `python create_gapminder_db.py` 就能在 `data/` 資料夾中建立 `gapminder.db`
+- 啟動環境並執行 `python plot_with_px.py` 就能生成 `gapminder_clone.html`
